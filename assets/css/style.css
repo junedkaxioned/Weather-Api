@@ -116,8 +116,7 @@ li {
 .weather-api-section .wrapper { width: 100%; }
 
 .backgorund-image {
-  background-color: rgb(209, 171, 171);
-  background-image: url("../images/cloudy.jfif");
+  background-color: rgb(196, 227, 237);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -157,7 +156,7 @@ h1 {
   outline: none;
   position: relative;
   color: #fff;
-  box-shadow: 1px 1px 50px rgba(0, 0, 0, 100%);
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 40%);
 }
 
 .input-search::after {
@@ -174,11 +173,35 @@ h1 {
   opacity: 75%;
 }
 
+.not-found {
+  padding: 30px 50px;
+  border-radius: 10px;
+  margin-top: 50px;
+  position: relative;
+  display: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 10%);
+}
+
+.not-found::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: inherit;
+  filter: blur(10px);
+
+}
+
+.not-found h2 {
+  color: #fff;
+  font-size: 32px;
+  text-transform: capitalize;
+}
+
 .weather-container {
   width: 50%;
   height: 100%;
   border-radius: 10px;
-  background-image: url("../images/cloudy.jfif");
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -205,7 +228,15 @@ h1 {
 
 .date { font-size: 14px; }
 .weather figure img { height: 100%; }
+figcaption {   margin: 0 0 25px; }
 .weather-name { text-transform: capitalize; }
+
+.weather figure { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
 
 .weather-details {
   padding: 30px;
