@@ -85,8 +85,8 @@ function showWeather(data) {
     backImage.style.backgroundImage = 'url("./assets/images/snow.jfif")';
     weatherContainer.style.color = '#000';  
   } else {
-    weatherContainer.style.backgroundImage = 'url("../assets/images/haze.jfif")';
-    backImage.style.backgroundImage = 'url("../assets/images/haze.jfif")';
+    weatherContainer.style.backgroundImage = 'url("./assets/images/haze.jfif")';
+    backImage.style.backgroundImage = 'url("./assets/images/haze.jfif")';
     weatherContainer.style.color = '#000';
   }
 }
