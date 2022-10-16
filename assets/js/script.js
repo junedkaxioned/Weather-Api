@@ -66,23 +66,23 @@ function showWeather(data) {
     `
 // Condition on type of weather to display tha background
   if (weather.toLowerCase() == 'clouds') {
-    weatherContainer.style.backgroundImage = 'url("../assets/images/cloudy.jfif")';
-    backImage.style.backgroundImage = 'url("../assets/images/cloudy.jfif")';
+    weatherContainer.style.backgroundImage = 'url("./assets/images/cloudy.jfif")';
+    backImage.style.backgroundImage = 'url("./assets/images/cloudy.jfif")';
   } else if (weather.toLowerCase() == 'thunderstorm') {
-    weatherContainer.style.backgroundImage = 'url("../assets/images/thunderstorm.jfif")';
-    backImage.style.backgroundImage = 'url("../assets/images/thunderstorm.jfif")';
+    weatherContainer.style.backgroundImage = 'url("./assets/images/thunderstorm.jfif")';
+    backImage.style.backgroundImage = 'url("./assets/images/thunderstorm.jfif")';
   } else if (weather.toLowerCase() == 'drizzle') {
-    weatherContainer.style.backgroundImage = 'url("../assets/images/drizzel.jfif")';
-    backImage.style.backgroundImage = 'url("../assets/images/drizzel.jfif")';
+    weatherContainer.style.backgroundImage = 'url("./assets/images/drizzel.jfif")';
+    backImage.style.backgroundImage = 'url("./assets/images/drizzel.jfif")';
   } else if (weather.toLowerCase() == 'rain') {
-    weatherContainer.style.backgroundImage = 'url("../assets/images/rainy.jfif")';
-    backImage.style.backgroundImage = 'url("../assets/images/rainy.jfif")';
+    weatherContainer.style.backgroundImage = 'url("./assets/images/rainy.jfif")';
+    backImage.style.backgroundImage = 'url("./assets/images/rainy.jfif")';
   } else if (weather.toLowerCase() == 'clear') {
-    weatherContainer.style.backgroundImage = 'url("../assets/images/clear.jfif")';  
-    backImage.style.backgroundImage = 'url("../assets/images/clear.jfif")';
+    weatherContainer.style.backgroundImage = 'url("./assets/images/clear.jfif")';  
+    backImage.style.backgroundImage = 'url("./assets/images/clear.jfif")';
   } else if (weather.toLowerCase() == 'snow') {
-    weatherContainer.style.backgroundImage = 'url("../assets/images/snow.jfif")';
-    backImage.style.backgroundImage = 'url("../assets/images/snow.jfif")';
+    weatherContainer.style.backgroundImage = 'url("./assets/images/snow.jfif")';
+    backImage.style.backgroundImage = 'url("./assets/images/snow.jfif")';
     weatherContainer.style.color = '#000';  
   } else {
     weatherContainer.style.backgroundImage = 'url("../assets/images/haze.jfif")';
