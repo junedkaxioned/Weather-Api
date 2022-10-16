@@ -100,7 +100,6 @@ form.addEventListener('submit', function (e) {
 // Fetching Weather Api
 function fetchApi(searchInput) {
   var baseApi = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}`;
-  console.log(searchInput.value);
   fetch(baseApi)
   .then(function (response) {
     // Condition if response ok disable invalid text and display response
@@ -132,7 +131,6 @@ function getCoordintes() {
     var lat = crd.latitude.toString();
     var lng = crd.longitude.toString();
     var coordinates = [lat, lng];
-    console.log(`Latitude: ${lat}, Longitude: ${lng}`);
     fetchLocation(coordinates)
     return;
   }
@@ -152,7 +150,6 @@ function fetchLocation(coordinates) {
 //  fetching api for getting current city
   fetch(locApi)
   .then(function (response) {
-    console.log(response);
     return response.json();
   })
   .then(function (result) {
